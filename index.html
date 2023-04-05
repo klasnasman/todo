@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <title>ATT GÖRA:</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div id="logo">Att göra</div>
+            <div id="date"></div>
+        </header>
+
+        <form id="todo">
+            <button class="material-symbols-rounded green" title="Lägg till">add_circle</button>
+            <input id='input' type="text" placeholder="...">
+            <ul id="incomplete"></ul>
+            <div class="complete">
+                <ul id="complete"></ul>
+            </div>
+            <button class="material-symbols-rounded" id="clear" title="Rensa lista">delete</button>
+        </form>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+:root {
+  --clr-body: #f8f8f8;
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-green: #58AD69;
+  --clr-red: #E2574C;
+  --clr-yellow: #FFBC49;
+
+  --ff-body: "Inconsolata";
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.5rem;
+
+  --padding: 1rem;
+}
+
+/* BODY, HEADER & FONT */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  background-color: var(--clr-body);
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+h1 {
+  padding-bottom: 1rem;
+}
+
+h2 {
+  padding-top: 1rem;
+}
+
+#date, #logo {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* MISC */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0rem;
+  min-width: 200px;
+}
+
+.complete {
+  border-top: 1px solid;
+  min-height: 131px;
+}
+
+[contenteditable] {
+  background: var(--clr-white);
+  color: var(--clr-black);
+  outline: 1px dashed;
+  border-radius: 2px;
+  padding: 0px 5px;
+}
+
+.hide {
+  display: none
+}
+
+/* FORM, BUTTONS, ICONS AND INPUT FIELD */
+form#todo {
+  border: 1px dashed;
+  border-radius: 2px;
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.material-symbols-rounded.green {
+  color: var(--clr-green);
+}
+
+button.material-symbols-rounded.red {
+  color: var(--clr-red);
+}
+
+button.material-symbols-rounded.yellow {
+  color: var(--clr-yellow);
+}
+
+button#clear {
+  background-color: var(--clr-red);
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 1rem;
+  padding: 2px 0px;
+}
+
+.material-symbols-rounded {
+  border: none;
+  vertical-align: bottom;
+  padding: 0px 5px 0px 0px;
+}
+
+input {
+  border: 1px dashed;
+  border-radius: 2px;
+  padding: 0px 0px 0px 5px;
+  background-color: var(--clr-white);
+  min-width: 300px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* UL, LI & P */
+ul#incomplete {
+  min-height: 131px;
+  padding-top: 1rem;
+}
+
+ul#complete>li>p {
+  position: relative;
+  white-space: nowrap;
+}
+
+ul#complete>li>p:after {
+  border-top: 1px solid;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  left: 0;
+}
+
+li {
+  height: 2.4rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-bottom: 1px dashed;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li p {
+  margin: 0px 0px 0px 10px;
+}
